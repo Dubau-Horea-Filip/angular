@@ -1,0 +1,24 @@
+<div class="center">
+    <label>Id:
+        <input #id required/>
+        <br/>
+      </label>
+      <label>Name:
+        <input #name required/>
+        <br/>
+      </label>
+      
+      <label>Age:
+        <input #age required/>
+        <br/>
+      </label>
+
+      <label>Pet:
+        <input #pet required/>
+        <br/>
+      </label>
+      
+      <button (click)="updateWizard(id. value, name.value, age.value, pet.value )">
+        Save
+      </button>
+</div>

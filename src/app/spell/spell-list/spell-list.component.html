@@ -1,0 +1,19 @@
+<div class="center">
+    <div *ngIf="selectedSpell">
+    <h2>
+      {{selectedSpell.name | uppercase}} was selected
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+  </div>
+
+    <h2>Spells</h2>
+    <ol class="spells">
+        <li *ngFor="let spell of spells; let i=index"
+        [class.selected]="spell === selectedSpell"
+        (click)="onSelect(spell)">
+            {{spell.id}}
+            {{spell.name}}
+            {{spell.description}}
+        </li>
+    </ol>
+</div>

@@ -1,0 +1,13 @@
+<div *ngIf="pet" class="center">
+    <h2>pet {{pet.name}} details</h2>
+    <div>
+        <label>Name: </label> {{pet.name}}
+    </div>
+    <div>
+        <label>Breed: </label> {{pet.breed}}
+    </div>
+    <div>
+        <label>WizardId: </label> {{pet.wid}}
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>

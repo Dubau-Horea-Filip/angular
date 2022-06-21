@@ -1,0 +1,13 @@
+<div *ngIf="spell" class="center">
+    <h2>Casted spell details</h2>
+    <div>
+        <label>WizardId: </label> {{spell.wizardId}}
+    </div>
+    <div>
+        <label>SpellId: </label> {{spell.spellId}}
+    </div>
+    <div>
+        <label>Details: </label> {{spell.details}}
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>

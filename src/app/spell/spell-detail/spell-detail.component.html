@@ -1,0 +1,10 @@
+<div *ngIf="spell" class="center">
+    <h2>Spell {{spell.name}} details</h2>
+    <div>
+        <label>Name: </label> {{spell.name}}
+    </div>
+    <div>
+        <label>Desscription: </label> {{spell.description}}
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>

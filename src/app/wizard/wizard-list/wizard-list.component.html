@@ -1,0 +1,20 @@
+<div class="center">
+    <div *ngIf="selectedWizard">
+    <h2>
+      {{selectedWizard.name | uppercase}} was selected
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+  </div>
+
+    <h2>Wizards</h2>
+    <ol class="wizards">
+        <li *ngFor="let wizard of wizards; let i=index"
+        [class.selected]="wizard === selectedWizard"
+        (click)="onSelect(wizard)">
+            {{wizard.id}}
+            {{wizard.name}}
+            {{wizard.age}}
+            {{wizard.pet}}
+        </li>
+    </ol>
+</div>

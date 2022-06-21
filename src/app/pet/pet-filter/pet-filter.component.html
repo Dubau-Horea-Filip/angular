@@ -1,0 +1,33 @@
+<div class="center">
+    <label>Name filter :
+        <input #name/>
+        <br/>
+      </label>
+      <br/>
+      <button (click)="filterPets(name.value)">
+        Filter
+      </button>
+      
+      <ol class="students">
+        <li *ngFor="let pet of pets ">
+          {{pet.name}}
+          {{pet.breed}}
+          {{pet.wid}}
+        </li>
+      </ol>
+      
+      
+      <button (click)="filterPetsAngular(name.value)">
+        Filter front
+      </button>
+      
+      <ol class="students">
+        <li *ngFor="let pet of petsWithAngular">
+            {{pet.name}}
+            {{pet.breed}}
+            {{pet.wid}}
+        </li>
+      </ol>
+
+      <button routerLink="/pets">Back</button>
+</div>

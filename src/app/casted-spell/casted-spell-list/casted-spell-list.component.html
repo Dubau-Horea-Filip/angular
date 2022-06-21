@@ -1,0 +1,20 @@
+<div class="center">
+    <div *ngIf="selectedSpell">
+    <h2>
+      Casted spell was selected
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+  </div>
+
+    <h2>Casted Spells</h2>
+    <ol class="spells">
+        <li *ngFor="let spell of spells; let i=index"
+        [class.selected]="spell === selectedSpell"
+        (click)="onSelect(spell)">
+            {{spell.id}}
+            {{spell.wizardId}}
+            {{spell.spellId}}
+            {{spell.details}}
+        </li>
+    </ol>
+</div>

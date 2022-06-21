@@ -1,0 +1,20 @@
+<div class="center">
+    <label>WizardId:
+        <input #wizardId required/>
+        <br/>
+      </label>
+      
+      <label>SpellId:
+        <input #spellId required/>
+        <br/>
+      </label>
+      
+      <label>Details:
+        <input #details required/>
+        <br/>
+      </label>
+      
+      <button (click)="saveSpell(wizardId.value, spellId.value, details.value)">
+        Save
+      </button>
+</div>

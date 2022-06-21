@@ -1,0 +1,13 @@
+<div *ngIf="wizard" class="center">
+    <h2>wizard {{wizard.name}} details</h2>
+    <div>
+        <label>Name: </label> {{wizard.name}}
+    </div>
+    <div>
+        <label>Age: </label> {{wizard.age}}
+    </div>
+    <div>
+        <label>Pet: </label> {{wizard.pet}}
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>

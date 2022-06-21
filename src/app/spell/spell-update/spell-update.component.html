@@ -1,0 +1,20 @@
+<div class="center">
+    <label>Id:
+        <input #id required/>
+        <br/>
+      </label>
+      
+      <label>Name:
+        <input #name required/>
+        <br/>
+      </label>
+      
+      <label>Description:
+        <input #description required/>
+        <br/>
+      </label>
+      
+      <button (click)="updateSpell(id.value, name.value, description.value)">
+        Save
+      </button>
+</div>
