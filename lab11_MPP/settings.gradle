@@ -1,0 +1,5 @@
+rootProject.name = 'lab11_MPP'
+include 'client'
+include 'core'
+include 'web'
+

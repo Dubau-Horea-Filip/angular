@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+apply plugin: 'war'
+
+dependencies {
+    implementation(project(':core'))
+    implementation(group: 'org.springframework', name: 'spring-webmvc', version: "$springVersion")
+    implementation(group: 'javax.servlet', name: 'javax.servlet-api', version:"$javaxServeletApiVersion")
+
+
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
